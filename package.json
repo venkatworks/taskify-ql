@@ -1,0 +1,37 @@
+{
+  "name": "taskify-ql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatworks/taskify-ql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venkatworks/taskify-ql/issues"
+  },
+  "homepage": "https://github.com/venkatworks/taskify-ql#readme",
+  "dependencies": {
+    "@graphql-tools/merge": "^9.0.24",
+    "apollo-server": "^3.13.0",
+    "apollo-server-errors": "^3.3.1",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "graphql": "^16.11.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.6",
+    "@graphql-codegen/typescript": "^4.1.6",
+    "@graphql-codegen/typescript-operations": "^4.6.1",
+    "eslint": "^9.26.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3"
+  }
+}
