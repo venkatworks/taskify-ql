@@ -11,9 +11,8 @@ const taskTypeDefs = gql`
     _id: ID
     title: String!
     description: String!
-    dueDate: String!
-    priority: PriorityEnum!
-    status: String!
+    dueDate: String
+    priority: PriorityEnum
     createdBy: String
   }
 
@@ -26,22 +25,20 @@ const taskTypeDefs = gql`
     createTask(
       title: String!
       description: String!
-      dueDate: String!
-      priority: PriorityEnum!
-      status: String!
+      dueDate: String
+      priority: PriorityEnum
       createdBy: String
     ): Task
 
     updateTask(
-      id: ID!
+      _id: ID!
       title: String
       description: String
       dueDate: String
       priority: PriorityEnum
-      status: String
     ): Task
 
-    deleteTask(id: ID!): Boolean
+    deleteTask(_id: ID!): Boolean
   }
 `;
 

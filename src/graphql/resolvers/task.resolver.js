@@ -7,8 +7,8 @@ const taskResolvers = {
   },
   Mutation: {
     createTask: async (_, args) => await taskService.createTask(args),
-    updateTask: async (_, { id, ...rest }) => await taskService.updateTask(id, rest),
-    deleteTask: async (_, { id }) => await taskService.deleteTask(id),
+    updateTask: async (_, { _id, ...rest }) => await taskService.updateTask(_id, rest),
+    deleteTask: async (_, { _id }) => await taskService.deleteTask(_id),
   }
 };
 

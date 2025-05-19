@@ -16,8 +16,8 @@ exports.createTask = async (task) => {
   return data;
 };
 
-exports.updateTask = async (id, updates) => {
-  const { data } = await axios.put(`${API_BASE_URL}/task/${id}`, updates);
+exports.updateTask = async (_id, updates) => {
+  const { data } = await axios.put(`${API_BASE_URL}/task/${_id}`, updates);
   return data;
 };
 
